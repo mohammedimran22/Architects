@@ -33,14 +33,18 @@ nav ul li a{
     color: #727272;
     font-family: 'Work Sans';
     font-style: normal;
-    font-size: 15px;
+    font-size: 25px;
    
 }
 .title{
     margin-top: 50px;
     font-weight: 700;
-    font-size: 30px;
+    font-size: 45px;
     line-height: 53px;
+}
+.logo{
+    color: orange;
+    font-weight: 900px;
 }
 /* header end   */
 
@@ -367,37 +371,63 @@ color: #131313
     color: #727272;
 }
 /* 4th section grid start  */
-.container .box-container{
+
+/* logo-part styles */
+.logos {
     position: absolute;
     display: flex;
-    justify-content: space-around;
-    top: 3663px;
-    bottom: 855px;
-    left: 450px;
- 
-}
-.box{
-grid-template-rows: 20px ;
-border: 1px solid orange;
-box-sizing: border-box;
-text-align: center;
-position: flex;
-justify-content: space-between;
+    justify-content:space-evenly;
+    align-items:center ;
 width: 241.83px;
 height: 241.83px;
-left: 531.92px;
 top: 3663.08px;
-border-radius: 8px;
+left: 850px;
+top: 3663.08px;
+
 }
-.container .box-container .box h3{
-    font-size: 70px;
-    
+.logo-part:hover{
+ z-index: 1;
+ box-shadow: 0 8px 50px rgba(0, 0, 0, 0.02);
+ transform: scale(1.05);
+ -webkit-transform: scale(1.05);
+ -moz-transform: scale(1.05);
+ -ms-transform: scale(1.05);
+ -o-transform: scale(1.05);
+ background-color: #FF900E;
 }
-.container .box-container .box p{
-    font-size: 25px;
-    font-weight: 300px
+
+
+.logo-part {
+    width: 241.83px;
+    height: 241.83px;
+    border: 1px solid #FF900E;
+    border-radius: 8px;
 }
-/* grid end  */
+
+.style-container {
+    width: 169px;
+    height: 136.22px;
+    left: 312px;
+    top: 3709px;
+    text-align: center;
+    margin: 45px auto;
+
+
+}
+
+.gain {
+    font-weight: 600;
+    font-size: 20px;
+    color: #727272;
+}
+
+.digit {
+    font-weight: 600;
+    font-size: 45px;
+    line-height: 53px;
+    text-align: center;
+    color: #424242;
+}
 .last-title{
     position: absolute;
 width: 327px;
@@ -493,3 +523,23 @@ border-radius: 8px;
 margin-top: 38px;
 margin-bottom: 38px;
 }
+
+@media screen and (min-width: 600px) {
+    body {
+        .title{
+            width: 100%;
+            font-size: 40px;
+            text-align: 30px;
+
+    }
+  }
+  @media  screen and (min-width:600px) {
+    .main-title{
+        font-weight: 700;
+    font-size: 45px;
+    line-height: 75px;
+    text-align: center;
+    font-family: 'Work Sans';
+    font-style: normal;
+    margin-top: 55px;
+  }
